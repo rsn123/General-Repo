@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>11900</projectId>
+    <projectKey>SWTES0707</projectKey>
+    <modelVersion>1.0</modelVersion>
+    <jiraVersion>8.5.7</jiraVersion>
+    <exportDate>2020-10-05 12:50:28 UTC</exportDate>
+    <folders>
+        <folder fullPath="TestGroup-3" index="3"/>
+    </folders>
+    <testCases>
+        <testCase id="397" key="SWTES0707-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Gencho Kerkeniakov</createdBy>
+            <createdOn>2020-07-28 19:14:11 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels>
+                <label><![CDATA[application]]></label>
+            </labels>
+            <name><![CDATA[[TG-3][Rosen] Loading application successful.]]></name>
+            <objective><![CDATA[the purpose of this test case is to load application successful.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[We have link which should redirect us to the polling app version v1.0.1<br/><br/><a href="http://poll-app7-20200409.softacad.bg/polls">http://poll-app7-20200409.softacad.bg/polls</a> <br/><br/><br/>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Navigate to&nbsp;<a href="http://poll-app7-20200409.softacad.bg/">http://poll-app7-20200409.softacad.bg/</a>&nbsp;]]></description>
+                        <expectedResult><![CDATA[The application is loaded successfully.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Rosen Dyakov</updatedBy>
+            <updatedOn>2020-08-04 19:49:24 UTC</updatedOn>
+        </testCase>
+        <testCase id="398" key="SWTES0707-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-07-28 19:32:07 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen] Successful Login]]></name>
+            <objective><![CDATA[Purpose of the test case is to validate login form is working as expected.&nbsp;]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[We have existing user:<br/>username : tg3admin<br/>password : 123456<br/>email :&nbsp;<a href="mailto:TG3@test.org" rel="nofollow">TG3@test.org</a><br/>name : Grupa tri<br/><br/>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Input correct username and password.]]></description>
+                        <expectedResult><![CDATA[Login successful.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Input correct username, wrong password.]]></description>
+                        <expectedResult><![CDATA[Login unsuccessful.<br/><br/>]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Input correct password, wrong username.]]></description>
+                        <expectedResult><![CDATA[Login unsuccessful.]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Input only username]]></description>
+                        <expectedResult><![CDATA[Login unsuccessful.]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Input only password]]></description>
+                        <expectedResult><![CDATA[Login unsuccessful.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Rosen Dyakov</updatedBy>
+            <updatedOn>2020-07-28 20:44:42 UTC</updatedOn>
+        </testCase>
+        <testCase id="405" key="SWTES0707-T9">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-07-28 19:44:50 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen] Clickable user icon after login.]]></name>
+            <objective><![CDATA[In this test case user shall be able to click on the profile icon at the top right corner of the screen&nbsp;]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[We are logged in successful.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Input user/admin credentials]]></description>
+                        <expectedResult><![CDATA[Log in successful.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on the top right user icon.]]></description>
+                        <expectedResult><![CDATA[User icon is clickable and responding.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Rosen Dyakov</updatedBy>
+            <updatedOn>2020-07-28 20:13:11 UTC</updatedOn>
+        </testCase>
+        <testCase id="419" key="SWTES0707-T23">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-07-28 19:53:16 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen] Wrong user and/or password notification]]></name>
+            <objective><![CDATA[In this test case we will test if given wrong login credentials we will not log in and will receive wrong credentials message.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[We have username, email and password that are non existing in server database.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Input non existing credentials]]></description>
+                        <expectedResult><![CDATA[Login unsuccessful, wrong credentials message appear.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Input existing password and non existing username.]]></description>
+                        <expectedResult><![CDATA[Login unsuccessful, wrong credentials message appear.]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Input existing username and non existing password.]]></description>
+                        <expectedResult><![CDATA[Login unsuccessful, wrong credentials message appear.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Rosen Dyakov</updatedBy>
+            <updatedOn>2020-07-28 20:24:12 UTC</updatedOn>
+        </testCase>
+        <testCase id="438" key="SWTES0707-T42">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-07-28 20:06:57 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen] Log out successful.]]></name>
+            <objective><![CDATA[We want to log out successfully.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[We are logged in to our user/admin account.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Log in with valid user/admin name and password.]]></description>
+                        <expectedResult><![CDATA[Successful login.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on the top right user icon.]]></description>
+                        <expectedResult><![CDATA[Drop down menu occurs with Log Out option.&nbsp;]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Click on Log Out option.]]></description>
+                        <expectedResult><![CDATA[Log out successful.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Rosen Dyakov</updatedBy>
+            <updatedOn>2020-07-28 20:15:46 UTC</updatedOn>
+        </testCase>
+        <testCase id="463" key="SWTES0707-T67">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-07-28 20:33:14 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen] Logged out after 60 minutes]]></name>
+            <objective><![CDATA[We will test if the system will log us out if we make a request to the server after 60 or more minute session.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[<ol data-indent="0" data-stringify-type="ordered-list"><li>User logged in successful</li><li>User inactive for 61 minutes</li><li>User trying to vote, edit poll or add new poll etc.</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Trying to vote/create poll 60 minutes after log in.]]></description>
+                        <expectedResult><![CDATA[Log out automatically.]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Logged in for more than 60 minutes without action.]]></description>
+                        <expectedResult><![CDATA[Still logged in.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Rosen Dyakov</updatedBy>
+            <updatedOn>2020-08-01 19:40:10 UTC</updatedOn>
+        </testCase>
+        <testCase id="561" key="SWTES0707-T163">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-08-04 19:35:44 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen] Logout with browser "Back" button.]]></name>
+            <objective><![CDATA[The test aims to check if we stay logged in after we press browser "Back" button.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[Successfully logged in with admin/user credentials.]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Log in with user/admin credentials.]]></description>
+                        <expectedResult><![CDATA[Log in successful.]]></expectedResult>
+                        <testData><![CDATA[normal user: normalUser1 <br/>password: 123456<br/><br/>admin user: tg3admin<br/>password: 123456<br/><br/>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Press browser "Back" button.]]></description>
+                        <expectedResult><![CDATA[User stay logged in.]]></expectedResult>
+                        <testData><![CDATA[]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Rosen Dyakov</updatedBy>
+            <updatedOn>2020-08-04 19:54:19 UTC</updatedOn>
+        </testCase>
+        <testCase id="621" key="SWTES0707-T222">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-08-08 18:16:15 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen][US-40] Registration with foreign characters than Latin.]]></name>
+            <objective><![CDATA[The objective is to check if we can make a registration with other characters like Cyrillic.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[Cyrillic language input method]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Open the application registration form.]]></description>
+                        <expectedResult><![CDATA[The registration form is loaded.]]></expectedResult>
+                        <testData><![CDATA[<a href="http://poll-app7-20200409.softacad.bg/signup">http://poll-app7-20200409.softacad.bg/signup</a> ]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Enter Cyrillic name]]></description>
+                        <expectedResult><![CDATA[No error message is shown.]]></expectedResult>
+                        <testData><![CDATA[Росен]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Enter Cyrillic username]]></description>
+                        <expectedResult><![CDATA[No error message is shown.]]></expectedResult>
+                        <testData><![CDATA[Росен123]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Enter Cyrillic email]]></description>
+                        <expectedResult><![CDATA[No error message is shown.]]></expectedResult>
+                        <testData><![CDATA[<pre>квіточка@пошта.укр</pre>]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Enter Cyrillic password]]></description>
+                        <expectedResult><![CDATA[No error message is shown.]]></expectedResult>
+                        <testData><![CDATA[росендяков]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Click "Register" button]]></description>
+                        <expectedResult><![CDATA[Registration is successful.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="728" key="SWTES0707-T324">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-08-15 18:48:02 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen][US-111/4] Redirection to the poll review screen after login]]></name>
+            <objective><![CDATA[The purpose of the test is to validate that after login user is redirected to the poll review screen.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[Valid user credentials]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Log in to the application.]]></description>
+                        <expectedResult><![CDATA[Login is successful and poll review is displayed.<br/><br/>]]></expectedResult>
+                        <testData><![CDATA[Username: normalUser1<br/>Password: 123456<br/><br/>Admin username: tg3admin<br/>password: 123456]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Rosen Dyakov</updatedBy>
+            <updatedOn>2020-08-17 21:56:26 UTC</updatedOn>
+        </testCase>
+        <testCase id="729" key="SWTES0707-T325">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-08-15 19:11:37 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen][US-111/5.1] User details are shown after login]]></name>
+            <objective><![CDATA[The purpose of the test is to verify that after login user details like full name, username, join date are shown.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[Valid username and password.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Log in to the application.]]></description>
+                        <expectedResult><![CDATA[Login is successful.]]></expectedResult>
+                        <testData><![CDATA[Username: normalUser1<br/>Password: 123456<br/>Admin username: tg3admin<br/>Password: 123456]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on the top-right user icon.]]></description>
+                        <expectedResult><![CDATA[A Dropdown menu occurs.]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Click on the "Profile" tab.]]></description>
+                        <expectedResult><![CDATA[The user is redirected to the profile page and full name, username, and joined date are displayed.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="730" key="SWTES0707-T326">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-08-15 19:31:02 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen][US-111/5.2] User polls details are shown in profile tab.]]></name>
+            <objective><![CDATA[The purpose of the test is to validate can the user see the polls that he has created.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[Valid username and password. Polls created(only in the admin account)]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Log in to the application.]]></description>
+                        <expectedResult><![CDATA[Login is successful.<br/><br/>]]></expectedResult>
+                        <testData><![CDATA[Username: normalUser1<br/>Password: 123456<br/><br/>Admin username: tg3admin<br/>Password: 123456<br/><br/>]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Click on the top-right user icon and select the "Profile" tab.]]></description>
+                        <expectedResult><![CDATA[The user is redirected to his profile page.]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Clicks on the "Polls" link on the mid-left side of the screen.]]></description>
+                        <expectedResult><![CDATA[All the polls created by the user are shown in his profile page.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+            <updatedBy>Rosen Dyakov</updatedBy>
+            <updatedOn>2020-08-15 19:40:05 UTC</updatedOn>
+        </testCase>
+        <testCase id="731" key="SWTES0707-T327">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-08-15 19:38:03 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen][US-111/5.3] User voting details are shown in profile tab.]]></name>
+            <objective><![CDATA[The purpose of the test case is to validate that the user can see his votes stats.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[Valid username and password. Voting activity.<br/><br/>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Log in to the application.]]></description>
+                        <expectedResult><![CDATA[Login is successful.<br/><br/>]]></expectedResult>
+                        <testData><![CDATA[Normal username: normalUser1<br/>Password: 123456<br/><br/>Admin username: tg3admin<br/>Password: 123456]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Navigate to the top-right profile icon and click on it.]]></description>
+                        <expectedResult><![CDATA[Dropdown menu is shown.<br/><br/>]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Click on the profile tab.]]></description>
+                        <expectedResult><![CDATA[The user is redirected to his profile page.]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Click on the mid-left "Votes" link.]]></description>
+                        <expectedResult><![CDATA[The user is shown polls that he has voted on and answers he gave in the profile page.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="763" key="SWTES0707-T359">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-08-16 22:03:08 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen][US-109/6] Selection of the length of the poll in days and hours]]></name>
+            <objective><![CDATA[The objective of the test is to make sure we can choose the duration of the polls we create as an admin in days and hours.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[An account with admin permission.<br/>We are logged in.]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Navigate to the login page.]]></description>
+                        <expectedResult><![CDATA[Log in page is loaded successfully.]]></expectedResult>
+                        <testData><![CDATA[<a href="http://poll-app7-20200409.softacad.bg/login">http://poll-app7-20200409.softacad.bg/login</a> ]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Log in with admin credentials.]]></description>
+                        <expectedResult><![CDATA[Log in successful.]]></expectedResult>
+                        <testData><![CDATA[Username: tg3admin<br/>Password: 123456]]></testData>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Navigate to top-right icon "New Poll"]]></description>
+                        <expectedResult><![CDATA[The user is redirected to create a poll page.]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Select from the "Poll Lenght" dropdown menu days.]]></description>
+                        <expectedResult><![CDATA[Days number selected.<br/><br/>]]></expectedResult>
+                        <testData><![CDATA[From 0 to maximum 7]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Select from the "Poll Lenght" dropdown menu hours.]]></description>
+                        <expectedResult><![CDATA[How many hours selected.<br/><br/>]]></expectedResult>
+                        <testData><![CDATA[From 0 to maximum 23]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="776" key="SWTES0707-T372">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rosen Dyakov</createdBy>
+            <createdOn>2020-08-17 21:52:02 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[TestGroup-3]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[[TG-3][Rosen][US-109/8] Notification message when field validation fails when creating a poll.]]></name>
+            <objective><![CDATA[The objective of the test is to verify when creating a poll, the user receives a notification message if field validation fails.]]></objective>
+            <owner>JIRAUSER12209</owner>
+            <precondition><![CDATA[Admin account.<br/>The user is logged in.<br/><br/><br/>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Log in with admin credentials.]]></description>
+                        <expectedResult><![CDATA[Login is successful.]]></expectedResult>
+                        <testData><![CDATA[Admin username: tg3admin<br/>Password: 123456]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Navigate to the "Create poll" tab on the top-right corner of the page and click on it.]]></description>
+                        <expectedResult><![CDATA[The user is redirected to the "Create poll" page.]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Type only a question and click "Create poll".]]></description>
+                        <expectedResult><![CDATA[The notification message appears that something when wrong.]]></expectedResult>
+                        <testData><![CDATA[What's cooking good lookin?]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Type a question with only one asnwer and click "Create poll".]]></description>
+                        <expectedResult><![CDATA[The notification message appears that something when wrong.]]></expectedResult>
+                        <testData><![CDATA[What's cooking good lookin?<br/>Answer: nada]]></testData>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Type a question with two answers and set poll length to 0.]]></description>
+                        <expectedResult><![CDATA[The notification message appears that something when wrong.]]></expectedResult>
+                        <testData><![CDATA[What's cooking good lookin?<br/>Answers:1. nada<br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.mucho trabaho]]></testData>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Type only answers without question.]]></description>
+                        <expectedResult><![CDATA[The notification message appears that something when wrong.]]></expectedResult>
+                        <testData><![CDATA[Answers:1. nada<br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.mucho trabaho]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
